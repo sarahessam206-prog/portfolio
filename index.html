@@ -44,6 +44,18 @@ h3{font-size:22px;margin:0 0 10px}
 .contact a{text-decoration:underline}
 footer{text-align:center;color:var(--muted);padding:30px;border-top:1px solid var(--line)}
 @media(max-width:800px){.links{display:none}.hero{flex-direction:column-reverse;text-align:center;gap:35px}.buttons{justify-content:center}.grid,.skillGrid,.services{grid-template-columns:1fr}.photo{width:285px;height:360px}section{padding-left:18px;padding-right:18px}}
+.projectImg{
+    width:100%;
+    border-radius:16px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.projectImg img{
+    width:100%;
+    height:auto;
+    display:block;
+}
 </style>
 </head>
 <body>
@@ -73,8 +85,6 @@ I am a Level 3 student at Assiut University, Faculty of Commerce, specializing i
 <div class="eyebrow">Education</div>
 <h2>Education</h2>
 <div class="card"><h3>Assiut University — Faculty of Commerce</h3><p>Program: Public Policy Information Systems<br>Level: Third Year<br>Expected Graduation: 2028</p></div>
-<br>
-<div class="card"><h3>Academic Focus</h3><div class="tags"><span class="tag">Information Systems</span><span class="tag">Database Management</span><span class="tag">SQL</span><span class="tag">Statistics</span><span class="tag">Data Analysis</span><span class="tag">Business Information Systems</span></div></div>
 </section>
 
 <section id="skills">
@@ -102,11 +112,37 @@ I am a Level 3 student at Assiut University, Faculty of Commerce, specializing i
 </div>
 </section>
 
-<section>
+<section id="projects">
 <div class="eyebrow">Projects</div>
 <h2>Projects</h2>
-<div class="card"><p>I am currently building my first portfolio projects in Data Analysis. This section will be updated with project case studies, dashboards, analysis, and live links as they are completed.</p></div>
+<div class="projects">
+
+  <div class="project">
+    
+    <div class="projectImg"><img src="C:\Users\user\Desktop\protofolio\projectImg.png"></div>
+      <h3>Central Superstore — SQL Data Warehouse &amp; Business Analytics</h3>
+      <p>Designed and built a retail analytics data warehouse in SQL Server, turning raw transactional sales data into a reporting-ready star schema, then used it to answer real profitability and performance questions.</p>
+      <ul>
+        <li>Modeled a star schema: 1 fact table and 4 dimension tables (Customer, Product, Date, Location), with primary/foreign key relationships.</li>
+        <li>Wrote 18 analytical SQL queries covering joins, CASE-based segmentation, subqueries, and 2 CTEs.</li>
+        <li>Built a KPI view and a parameterized stored procedure for on-demand customer sales reports.</li>
+        <li>Added indexing and validated the pipeline end-to-end (staging → dimensions → fact table) with zero data loss.</li>
+        <li>Surfaced business insights, e.g. one region drove over half the company's profit losses despite leading in sales, traced back to excessive discounting.</li>
+      </ul>
+      <div class="projectTags">
+        <span class="projectTag">SQL Server</span>
+        <span class="projectTag">Star Schema</span>
+        <span class="projectTag">CTEs &amp; Subqueries</span>
+        <span class="projectTag">KPI Reporting</span>
+        <span class="projectTag">Data Warehousing</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+<p class="muted comingSoon">More case studies are on the way as I complete them.</p>
 </section>
+
 
 <section id="contact">
 <div class="contact">
